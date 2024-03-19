@@ -23,18 +23,47 @@ let [counter,setCounter]=  useState(15)
 {
   // console.log("value added",Math.random())
 
-  if(counter<25)
-  {
-  setCounter(counter+1)
-  }
+    setCounter((prevCounter)=>
+    
+      prevCounter +1
+    )
+    setCounter((prevCounter)=>
+    
+      prevCounter +1
+    )
+    setCounter((prevCounter)=>
+    
+      prevCounter +1
+    )
+    setCounter((prevCounter)=>
+    
+      prevCounter +1
+    )
+    setCounter((prevCounter)=>
+    
+      prevCounter +1
+    )
+
+// callback ke through aega to ek ek karke execute hoga aur value mei jump aega counter ki
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+
+    //repeat kar bhi denge to bhi ek baar mei ek hi value increment hogi 
+    //it is because fibre algorithm jo hei sare counter ka ek batch bana ke processing ke liye bhejega insatantly nhi kareaga kuch bhi 
+
 }
 
 const removeValue=()=>
 {
-  if(counter>0)
-  {
+  
   setCounter(counter-1);
-  }
+  
 }
 
 
